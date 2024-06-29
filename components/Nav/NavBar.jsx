@@ -72,7 +72,7 @@ const NavBar = () => {
                                     </svg>
                                 </div>
                                 <div className='absolute w-52 hidden group-hover:block shadow-lg rounded-md'>
-                                    <ul className='py-4 flex flex-col gap-1'>
+                                    <ul className='pt-4 flex flex-col gap-1'>
                                         <li className='bg-white text-gray-600 px-5 py-1'>People - Community</li>
                                         <li className='bg-white text-gray-600 px-5 py-1'>Places - Venues</li>
                                         <li className='bg-white text-gray-600 px-5 py-1'>Programs - Events</li>
@@ -92,7 +92,7 @@ const NavBar = () => {
                                     </svg>
                                 </div>
                                 <div className='absolute w-52 hidden group-hover:block shadow-lg rounded-md'>
-                                    <ul className='py-4 flex flex-col gap-1'>
+                                    <ul className='pt-4 flex flex-col gap-1'>
                                         <li className='bg-white text-gray-600 px-5 py-1'>People - Community</li>
                                         <li className='bg-white text-gray-600 px-5 py-1'>Places - Venues</li>
                                         <li className='bg-white text-gray-600 px-5 py-1'>Programs - Events</li>
