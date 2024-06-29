@@ -53,7 +53,7 @@ const Landing = () => {
                             </span>
                         </div>
                         <div>
-                            <Image className='hidden lg:block' src={GroupPng} alt='landing png' />
+                            <Image className='hidden lg:block mx-auto' src={GroupPng} alt='landing png' />
                         </div>
                     </div>
                     <div className='mb-12 lg:mb-0'>

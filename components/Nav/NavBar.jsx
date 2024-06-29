@@ -110,7 +110,7 @@ const NavBar = () => {
                 </div>
             </div>
             {/* MOBILE NAV */}
-            <div className='md:hidden flex justify-between items-center px-4 shadow-lg shadow-[#F3F3F3]'>
+            <div className='lg:hidden flex justify-between items-center px-4 shadow-lg shadow-[#F3F3F3]'>
                 <div><Image className='' src={ShortLogo} /></div>
                 <div>
                     <ul className='flex gap-4 justify-center items-center'>
