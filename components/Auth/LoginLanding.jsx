@@ -2,7 +2,7 @@
 
 const LoginLanding = () => {
     return (
-        <div>
+        <div className="flex flex-col-reverse lg:flex-col gap-5 lg:gap-0">
             <button className="w-full flex items-center border-[#8064A2] border-2 rounded-lg px-5 py-2 mb-6">
                 <svg width="20" height="20" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M3.44813 8.00005C3.44813 7.48043 3.53438 6.98218 3.6885 6.51493L0.992253 4.45605C0.466753 5.52293 0.170753 6.72518 0.170753 8.00005C0.170753 9.27393 0.466503 10.4753 0.991128 11.5416L3.68588 9.47868C3.53325 9.01355 3.44813 8.51718 3.44813 8.00005Z" fill="#FBBC05" />
@@ -19,12 +19,23 @@ const LoginLanding = () => {
                 </svg>
                 <span className="mx-auto">Continue with Facebook</span>
             </button>
+
+            <div className="flex justify-center items-center gap-4 my-5">
+                <svg width="145" height="2" viewBox="0 0 145 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="145" height="2" fill="#CED4DA" />
+                </svg>
+                <span className=" font-semibold text-center lg:text-start">Or connect with</span>
+                <svg width="145" height="2" viewBox="0 0 145 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="145" height="2" fill="#CED4DA" />
+                </svg>
+            </div>
+
             <form>
                 <input className="bg-[#EBEDF0] w-full rounded-md placeholder:text-[#939CA3] placeholder:px-4 my-4 py-2" placeholder="Email" type='text' />
                 <input className="bg-[#EBEDF0] w-full rounded-md placeholder:text-[#939CA3] placeholder:px-4 my-4 py-2" placeholder="Email" type='password' />
                 <div className="flex justify-between items-center mt-2">
-                    <span className="text-base"><input type='checkbox' /> Remember me</span>
-                    <span className="flex items-center gap-2">
+                    <span className="text-xs md:text-base"><input type='checkbox' /> Remember me</span>
+                    <span className="flex items-center gap-2 text-xs md:text-base">
                         <svg width="12" height="15" viewBox="0 0 12 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M10 5.33335H9.33333V4.00002C9.33333 2.16002 7.84 0.666687 6 0.666687C4.16 0.666687 2.66666 2.16002 2.66666 4.00002V5.33335H2C1.26666 5.33335 0.666664 5.93335 0.666664 6.66669V13.3334C0.666664 14.0667 1.26666 14.6667 2 14.6667H10C10.7333 14.6667 11.3333 14.0667 11.3333 13.3334V6.66669C11.3333 5.93335 10.7333 5.33335 10 5.33335ZM6 11.3334C5.26666 11.3334 4.66666 10.7334 4.66666 10C4.66666 9.26669 5.26666 8.66669 6 8.66669C6.73333 8.66669 7.33333 9.26669 7.33333 10C7.33333 10.7334 6.73333 11.3334 6 11.3334ZM4 5.33335V4.00002C4 2.89335 4.89333 2.00002 6 2.00002C7.10666 2.00002 8 2.89335 8 4.00002V5.33335H4Z" fill="#939CA3" />
                         </svg>
@@ -32,7 +43,6 @@ const LoginLanding = () => {
                     </span>
                 </div>
                 <button className="bg-[#8064A2] w-full text-white py-2 rounded-md my-6">Continue</button>
-
             </form>
         </div>
     );
