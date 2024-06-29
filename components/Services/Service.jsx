@@ -1,7 +1,7 @@
 
 const Service = () => {
     return (
-        <div className="max-w-[1300px] mx-auto">
+        <div className="max-w-[1300px] mx-auto mb-28">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mx-5">
                 <div className="border border-[#CED4DA] px-6 lg:px-11 py-10 rounded-lg">
                     <div className="mb-6 flex justify-center lg:justify-start items-center gap-2 lg:gap-6 ">
