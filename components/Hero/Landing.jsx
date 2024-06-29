@@ -39,7 +39,7 @@ const Landing = () => {
                 <div className='grid grid-cols-1 lg:grid-cols-2'>
                     <div>
                         <div className='mb-12 lg:mb-24'>
-                            <h2 className=' font-semibold text-black text-xl lg:text-4xl mb-6'>Explore your <span className='text-[#0096C8]'>hobby</span> or <span className='text-[#8064A2]'>passion</span></h2>
+                            <h2 className='italic font-semibold text-black text-xl lg:text-4xl mb-6'>Explore your <span className='text-[#0096C8]'>hobby</span> or <span className='text-[#8064A2]'>passion</span></h2>
                             <span>
                                 <p className='w-full font-light text-base text-black mb-4 hidden lg:block'>
                                     Sign-in to interact with a community of fellow hobbyists and an eco-system of experts, teachers, suppliers, classes, workshops, and places to practice, participate or perform. Your hobby may be about visual or performing arts, sports, games, gardening, model making, cooking, indoor or outdoor activities…
