@@ -45,7 +45,7 @@ const NavBar = () => {
 
 
     return (
-        <div className='max-w-[1300px] mx-auto my-4'>
+        <div className='max-w-[1300px] mx-auto shadow-lg'>
             <div className='hidden lg:grid grid-cols-2 items-center'>
                 <div className='grid grid-cols-2'>
                     <div className='mx-auto'>
