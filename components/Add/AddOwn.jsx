@@ -2,7 +2,7 @@ import React from 'react';
 
 const AddOwn = () => {
     return (
-        <div className='bg-[#F7FDFF] py-28'>
+        <div className='bg-[#F7FDFF] py-28 mb-20 lg:mb-28'>
             <div className="max-w-[1300px] mx-auto">
                 <div>
                     <div className="bg-white border border-[#CED4DA] px-6 lg:px-11 py-10 rounded-lg mx-5">
