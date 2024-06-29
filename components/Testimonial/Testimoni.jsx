@@ -4,7 +4,7 @@ import pfsmall from '../../public/Ellipse 26.png'
 
 const Testimoni = () => {
     return (
-        <div className="lg:p-10 xl:p-28">
+        <div className="max-w-[1300px] mx-auto">
             <div className="bg-[#F7F5F9] p-10 rounded-lg">
                 <div className="mb-10">
                     <span className="flex items-center justify-center lg:justify-start gap-2 lg:gap-7 mb-8">
