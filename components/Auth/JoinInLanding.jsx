@@ -2,7 +2,7 @@ import React from 'react';
 
 const JoinInLanding = () => {
     return (
-        <div>
+        <div className="flex flex-col-reverse lg:flex-col gap-5 lg:gap-0">
             <button className="w-full flex items-center border-[#8064A2] border-2 rounded-lg px-5 py-2 mb-6">
                 <svg width="20" height="20" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M3.44813 8.00005C3.44813 7.48043 3.53438 6.98218 3.6885 6.51493L0.992253 4.45605C0.466753 5.52293 0.170753 6.72518 0.170753 8.00005C0.170753 9.27393 0.466503 10.4753 0.991128 11.5416L3.68588 9.47868C3.53325 9.01355 3.44813 8.51718 3.44813 8.00005Z" fill="#FBBC05" />
@@ -19,6 +19,17 @@ const JoinInLanding = () => {
                 </svg>
                 <span className="mx-auto">Continue with Facebook</span>
             </button>
+
+            <div className="flex justify-center items-center gap-4 my-5">
+                <svg width="145" height="2" viewBox="0 0 145 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="145" height="2" fill="#CED4DA" />
+                </svg>
+                <span className="text-sm font-semibold text-center lg:text-start">Or connect with</span>
+                <svg width="145" height="2" viewBox="0 0 145 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="145" height="2" fill="#CED4DA" />
+                </svg>
+            </div>
+
             <form>
                 <input className="bg-[#EBEDF0] w-full rounded-md placeholder:text-[#939CA3] placeholder:px-4 my-4 py-2" placeholder="Email" type='text' />
                 <input className="bg-[#EBEDF0] w-full rounded-md placeholder:text-[#939CA3] placeholder:px-4 my-4 py-2" placeholder="Email" type='password' />

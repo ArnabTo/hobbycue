@@ -45,7 +45,8 @@ const NavBar = () => {
 
 
     return (
-        <div className='max-w-[1300px] mx-auto shadow-lg'>
+        <div className='shadow-lg'>
+            <div className='max-w-[1300px] mx-auto'>
             <div className='hidden lg:grid grid-cols-2 items-center'>
                 <div className='grid grid-cols-2'>
                     <div className='mx-auto'>
@@ -167,6 +168,7 @@ const NavBar = () => {
                     </div>
                 </div>
             )}
+        </div>
         </div>
     );
 };

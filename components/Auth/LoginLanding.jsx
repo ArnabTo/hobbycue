@@ -24,7 +24,7 @@ const LoginLanding = () => {
                 <svg width="145" height="2" viewBox="0 0 145 2" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect width="145" height="2" fill="#CED4DA" />
                 </svg>
-                <span className=" font-semibold text-center lg:text-start">Or connect with</span>
+                <span className="text-sm font-semibold text-center lg:text-start">Or connect with</span>
                 <svg width="145" height="2" viewBox="0 0 145 2" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect width="145" height="2" fill="#CED4DA" />
                 </svg>
