@@ -8,6 +8,8 @@ import BookPng from '../../public/bookmark_black_24dp 1.png'
 import NotiPng from '../../public/notifications_black_24dp 1.png'
 import CartPng from '../../public/Product 3.png'
 import { useState } from 'react';
+import Login from '../Auth/Login';
+import Join from '../Auth/Join';
 
 const NavBar = () => {
 
@@ -17,15 +19,31 @@ const NavBar = () => {
     const handleMenuBar = () => {
         setMenuState(!menu)
     }
-  
-    const handleSignIn = () =>{
+
+    const handleSignIn = () => {
         setTabState('signIn')
     }
-    const handleJoinIn = () =>{
+    const handleJoinIn = () => {
         setTabState('joinIn')
     }
+    const signInButtonStyle = {
+        fontSize: '24px',
+        fontWeight: 'bold',
+        color: tab === 'signIn' ? '#8064A2' : '#939CA3',
+        borderBottom: tab === 'signIn' ? '3px solid #8064A2' : 'none',
+        cursor: 'pointer',
+        marginRight: '10px',
+    };
+    const joinInButtonStyle = {
+        fontSize: '24px',
+        fontWeight: 'bold',
+        color: tab === 'joinIn' ? '#8064A2' : '#939CA3',
+        borderBottom: tab === 'joinIn' ? '3px solid #8064A2' : 'none',
+        cursor: 'pointer',
+        marginRight: '10px',
+    };
 
-   
+
     return (
         <div className='max-w-[1300px] mx-auto my-4'>
             <div className='hidden lg:grid grid-cols-2 items-center'>
@@ -92,7 +110,7 @@ const NavBar = () => {
                 </div>
             </div>
             {/* MOBILE NAV */}
-            <div className='md:hidden flex justify-between items-center mx-4'>
+            <div className='md:hidden flex justify-between items-center px-4 shadow-lg shadow-[#F3F3F3]'>
                 <div><Image className='' src={ShortLogo} /></div>
                 <div>
                     <ul className='flex gap-4 justify-center items-center'>
@@ -127,26 +145,26 @@ const NavBar = () => {
                 </div>
             </div>
             {/* MOBILE NAV ITEM */}
-            {!menu && (
-                <div className='mt-4'>
-                 <div className='flex justify-center items-center gap-10'>
-                    <button onClick={handleSignIn} className='text-base font-semibold'>Sign In</button>
-                    <button onClick={handleJoinIn} className='text-base font-semibold'>Join In</button>
-                 </div>
-                 <div>
-                    <div>
-                        {
-                            tab === 'signIn' ? 
-                            <>
-                             <h1>SignIN</h1>
-                            </>
-                            :
-                            <>
-                             <h1>JoinIn</h1>
-                            </>
-                        }
+            {menu && (
+                <div className='mt-8'>
+                    <div className='flex justify-center items-center gap-10 mb-6'>
+                        <button onClick={handleSignIn} style={signInButtonStyle} >Sign In</button>
+                        <button onClick={handleJoinIn} style={joinInButtonStyle} >Join In</button>
                     </div>
-                 </div>
+                    <div>
+                        <div>
+                            {
+                                tab === 'signIn' ?
+                                    <>
+                                        <Login />
+                                    </>
+                                    :
+                                    <>
+                                        <Join/>
+                                    </>
+                            }
+                        </div>
+                    </div>
                 </div>
             )}
         </div>
