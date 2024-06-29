@@ -34,7 +34,7 @@ const Landing = () => {
     };
 
     return (
-        <div className='bg-[#F7F5F9] px-6 lg:px-24 pt-8 lg:pt-24 lg:mb-24'>
+        <div className='bg-[#F7F5F9] px-6 lg:px-24 pt-8 lg:pt-24 mb-12 lg:mb-24'>
             <div className='max-w-[1300px] mx-auto'>
                 <div className='grid grid-cols-1 lg:grid-cols-2'>
                     <div>
