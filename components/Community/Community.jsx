@@ -11,13 +11,13 @@ const Community = () => {
     }
 
     return (
-        <div className='bg-[#F7FDFF]'>
+        <div className='bg-[#F7FDFF] mx-5'>
             <div className='max-w-[1300px] mx-auto pt-24'>
                 <div>
                     <div>
                         <div className=' mb-24'>
                             <h2 className="italic font-medium text-2xl mb-8">Your <span className="text-[#8064A2]">Hobby</span>, Your <span className="text-[#0096C8]">Community</span></h2>
-                            <button className="px-7 py-2 border rounded-lg font-semibold bg-[#8064A2] text-white flex mx-auto lg:inline-block">Get started</button>
+                            <button className="px-7 py-2 border rounded-lg font-semibold bg-[#8064A2] text-white">Get started</button>
                         </div>
                     </div>
                     <div className='relative'>
